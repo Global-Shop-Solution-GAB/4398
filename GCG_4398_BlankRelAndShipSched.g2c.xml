@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxEdit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pages>
+    <DefaultPage>
+      <Header />
+      <Footer />
+    </DefaultPage>
+  </Pages>
+  <DisplayStrings />
+  <Selection>
+    <SelectionRect>
+      <Location>
+        <X>0</X>
+        <Y>466</Y>
+      </Location>
+      <Size>
+        <Width>24</Width>
+        <Height>14</Height>
+      </Size>
+      <X>0</X>
+      <Y>466</Y>
+      <Width>24</Width>
+      <Height>14</Height>
+    </SelectionRect>
+    <Options>UseColors OverwriteBlocks SelectLineOnTripleClick CopyLineWhenEmpty SelectWordOnCtrlClick</Options>
+  </Selection>
+  <Gutter>
+    <Options>PaintLineNumbers PaintBookMarks PaintLineModificators</Options>
+  </Gutter>
+  <Margin>
+    <Visible>false</Visible>
+  </Margin>
+  <LineStyles />
+  <LineSeparator />
+  <Printing>
+    <Footer />
+    <Header />
+  </Printing>
+  <WhiteSpace />
+  <TextSource>
+    <Position>
+      <X>0</X>
+      <Y>466</Y>
+    </Position>
+    <Lexer>
+      <Scheme>
+        <Author>Quantum Whale, LLC.</Author>
+        <Copyright>Copyright (c) 2004 - 2014 Quantum Whale LLC.</Copyright>
+        <FileType>gas</FileType>
+        <Version>1.5</Version>
+        <Styles>
+          <Style>
+            <Name>idents</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>numbers</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>reswords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>comments</Name>
+            <ForeColor>Green</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>xmlcomments</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>symbols</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>whitespace</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>strings</Name>
+            <ForeColor>Maroon</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>directives</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>htmlparams</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>syntax errors</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>codes nippets</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>255:180:228:180</BackColor>
+          </Style>
+          <Style>
+            <Name>GabReservedWords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabTokenWithBrackets</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabFunctionIntrinsicDebug</Name>
+            <ForeColor>White</ForeColor>
+            <BackColor>Red</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>GabVariable</Name>
+            <ForeColor>Teal</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabVariableSystemDefined</Name>
+            <ForeColor>Teal</ForeColor>
+            <FontStyle>Bold Italic</FontStyle>
+          </Style>
+          <Style>
+            <Name>GabGui</Name>
+            <ForeColor>OrangeRed</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabProgramSubStartEnd</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>LightGray</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+        </Styles>
+      </Scheme>
+    </Lexer>
+    <TextStrings>
+      <Lines>
+        <string>Program.Sub.ScreenSU.Start</string>
+        <string>Gui.F_FileSelect..Create</string>
+        <string>Gui.F_FileSelect..Caption("File Selection")</string>
+        <string>Gui.F_FileSelect..Size(5010,1695)</string>
+        <string>Gui.F_FileSelect..MinX(0)</string>
+        <string>Gui.F_FileSelect..MinY(0)</string>
+        <string>Gui.F_FileSelect..Position(0,0)</string>
+        <string>Gui.F_FileSelect..BackColor(-2147483633)</string>
+        <string>Gui.F_FileSelect..MousePointer(0)</string>
+        <string>Gui.F_FileSelect..Event(UnLoad,F_FileSelect_UnLoad)</string>
+        <string>Gui.F_FileSelect.cmdUpload.Create(Button)</string>
+        <string>Gui.F_FileSelect.cmdUpload.Size(1005,375)</string>
+        <string>Gui.F_FileSelect.cmdUpload.Position(255,750)</string>
+        <string>Gui.F_FileSelect.cmdUpload.Caption("Upload")</string>
+        <string>Gui.F_FileSelect.cmdUpload.Event(Click,cmdUpload_Click)</string>
+        <string>Gui.F_FileSelect.cmdBrowser.Create(Button)</string>
+        <string>Gui.F_FileSelect.cmdBrowser.Size(375,375)</string>
+        <string>Gui.F_FileSelect.cmdBrowser.Position(3750,375)</string>
+        <string>Gui.F_FileSelect.cmdBrowser.Caption("^")</string>
+        <string>Gui.F_FileSelect.cmdBrowser.Event(Click,cmdBrowser_Click)</string>
+        <string>Gui.F_FileSelect.txtDirectory.Create(TextBox,"",True,3495,300,0,195,405,True,0,"Arial",8,-2147483643,1)</string>
+        <string>Gui.F_FileSelect.lblFile.Create(Label,"File Directory",True,1935,255,0,255,195,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Program.Sub.ScreenSU.End</string>
+        <string />
+        <string>Program.Sub.Preflight.Start</string>
+        <string>Variable.Global.uFile.Declare(String)</string>
+        <string>Variable.Global.uFlag.Declare(String)</string>
+        <string />
+        <string>Program.Sub.Preflight.End</string>
+        <string />
+        <string>Program.Sub.Main.Start</string>
+        <string />
+        <string>'Original project 4209, created sales orders tied to blanket orders through an excel file.</string>
+        <string>'FEQ updated on Feb to be integrated with project 4224, which creates ship schedule lines </string>
+        <string />
+        <string>F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN, V.Ambient.PUser, V.Ambient.PPass)</string>
+        <string />
+        <string>'Check to see if they have Excel or OOC</string>
+        <string>F.Intrinsic.Control.CallSub(checkprogram)</string>
+        <string />
+        <string>Gui.F_FileSelect..Show</string>
+        <string />
+        <string>Program.Sub.Main.End</string>
+        <string />
+        <string>Program.Sub.cmdBrowser_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdBrowser_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string>Variable.Local.sDir.Declare(String)</string>
+        <string>Variable.Local.sFile.Declare(String)</string>
+        <string />
+        <string>'Have a window pop up to browse for a spredsheet file</string>
+        <string>F.Intrinsic.Control.SelectCase(V.Global.uFlag)</string>
+        <string>F.Intrinsic.Control.Case("EXCEL")</string>
+        <string>	F.Intrinsic.String.Build("{0}\Select File",V.Caller.GlobalDir,V.Local.sDir)</string>
+        <string>	Function.Intrinsic.UI.ShowOpenFileDialog(Variable.Local.sDir,"xlsx|*xlsx","",V.Local.sFile)</string>
+        <string>	Function.Intrinsic.Control.If(V.Local.sFile,&lt;&gt;,"***CANCEL***")</string>
+        <string>		Gui.F_FileSelect.txtDirectory.Text(Variable.Local.sFile)</string>
+        <string>	Function.Intrinsic.Control.EndIf</string>
+        <string>F.Intrinsic.Control.Case("OOCALC")</string>
+        <string>	F.Intrinsic.String.Build("{0}\Select File",V.Caller.GlobalDir,V.Local.sDir)</string>
+        <string>	Function.Intrinsic.UI.ShowOpenFileDialog(Variable.Local.sDir,"ods|*ods","",V.Local.sFile)</string>
+        <string>	Function.Intrinsic.Control.If(V.Local.sFile,&lt;&gt;,"***CANCEL***")</string>
+        <string>		Gui.F_FileSelect.txtDirectory.Text(Variable.Local.sFile)</string>
+        <string>	Function.Intrinsic.Control.EndIf</string>
+        <string>F.Intrinsic.Control.EndSelect</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdBrowser_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(f_fileselect_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdBrowser_Click.End</string>
+        <string />
+        <string>Program.Sub.cmdUpload_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdUpload_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>V.Local..BulkDeclareString(sLog, sName, sDir, sData, sLine, sDataLine, sDate, sBlOrd, sOrdLn, sLnDate, sLnQty, sShipID, sErr, sTemp, sParams, sRet, sBadLines, sKeys, sFilter, sPO, sPOs, sSql, sSO, sSOs, sShipLn)</string>
+        <string>Variable.Local.bDir.Declare(Boolean)</string>
+        <string>Variable.Local.iCount.Declare(String)</string>
+        <string>Variable.Local.bFlag.Declare(String)</string>
+        <string>Variable.Local.iView.Declare(String)</string>
+        <string>V.Local.sSOs.Set("")</string>
+        <string />
+        <string>F.Intrinsic.Control.If(V.Screen.F_FileSelect!txtDirectory.Text, =, "")</string>
+        <string>	F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>Gui.F_FileSelect..Visible(False)</string>
+        <string>F.Intrinsic.UI.InvokeWaitDialog("Reading File and processing releases.", "Blanket Order Releases Being Processed")</string>
+        <string />
+        <string>'F.Intrinsic.Debug.InvokeDebugger</string>
+        <string />
+        <string>'Function below automatically formats to CCYYMMDD</string>
+        <string>Function.Intrinsic.String.DateString(Variable.Ambient.Date, Variable.Local.sDate)</string>
+        <string />
+        <string>'Read the file</string>
+        <string>'Function.Intrinsic.File.File2StringArray(Variable.Screen.F_FileSelect!txtDirectory.Text, Variable.Ambient.NewLine, Variable.Local.sData)</string>
+        <string />
+        <string>F.Intrinsic.Control.SelectCase(V.Global.uFlag)</string>
+        <string>F.Intrinsic.Control.Case("EXCEL")</string>
+        <string>	F.Automation.MSExcel.ReadSpreadsheet(V.Screen.F_FileSelect!txtDirectory.Text, V.Local.sData)</string>
+        <string>F.Intrinsic.Control.Case("OOCALC")</string>
+        <string>	F.Automation.OOCalc.ReadSpreadsheet(V.Screen.F_FileSelect!txtDirectory.Text, V.Local.sData)</string>
+        <string>F.Intrinsic.Control.EndSelect</string>
+        <string />
+        <string>F.Intrinsic.String.Split(V.Local.sData, "&amp;^&amp;", V.Local.sData)</string>
+        <string>F.Intrinsic.String.Split(V.Local.sData(0), "$!$", V.Local.sDataLine)</string>
+        <string />
+        <string>'Check to see if data was found</string>
+        <string>Function.Intrinsic.Variable.IsArray(Variable.Local.sDataLine, Variable.Local.bFlag)</string>
+        <string>Function.Intrinsic.Control.If(Variable.Local.bFlag, =, False)</string>
+        <string>	'Print out error on Error Log</string>
+        <string>	Function.Intrinsic.Control.CallSub(writefile, "sLine", "No data found in file")</string>
+        <string>Function.Intrinsic.Control.Else</string>
+        <string>	Function.Intrinsic.Math.Add(Variable.Local.sDataLine.UBound, 1, Variable.Local.iCount)</string>
+        <string>	Function.Intrinsic.String.Build("{1}Data found successfully. {0} lines to be processed.{1}", Variable.Local.iCount, Variable.Ambient.NewLine, Variable.Local.sErr)</string>
+        <string>	Function.Intrinsic.Control.CallSub(writefile, "sLine", Variable.Local.sErr)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>Function.Intrinsic.Control.CallSub(createdatatable)</string>
+        <string>Variable.Local.sBadLines.Set("")</string>
+        <string />
+        <string />
+        <string>'Format data per line and upload using Callwrapper</string>
+        <string>Function.Intrinsic.Control.For(Variable.Local.iCount, Variable.Local.sDataLine.LBound, Variable.Local.sDataLine.UBound, 1)</string>
+        <string>	Function.Intrinsic.Math.Add(Variable.Local.iCount, 1, Variable.Local.sErr)</string>
+        <string>	Function.Intrinsic.String.Split(Variable.Local.sDataLine(Variable.Local.iCount), "*!*", Variable.Local.sLine)</string>
+        <string>	'Check to see if correct number of params</string>
+        <string>	Function.Intrinsic.Control.If(Variable.Local.sLine.UBound, =, 5)</string>
+        <string>		Variable.Local.sBlOrd.Set(Variable.Local.sLine(0))</string>
+        <string>		Variable.Local.sOrdLn.Set(Variable.Local.sLine(1))</string>
+        <string>		Variable.Local.sLnQty.Set(Variable.Local.sLine(2))</string>
+        <string>		Variable.Local.sLnDate.Set(Variable.Local.sLine(3))</string>
+        <string>'		Variable.Local.sShipID.Set(Variable.Local.sLine(4))</string>
+        <string>		F.Intrinsic.Control.IIF(V.Local.sLine(4), =, "", "F", V.Local.sLine(4), V.Local.sShipID)</string>
+        <string>		Variable.Local.sPO.Set(V.Local.sLine(5))</string>
+        <string>		'Need to add the Purchase order as well</string>
+        <string>		</string>
+        <string>		'Add line information to DataTable</string>
+        <string>		F.Data.DataTable.AddRow("Lines", "BlanketOrder", V.Local.sBlOrd, "OrderLine", V.Local.sOrdLn, "Quantity", V.Local.sLnQty, "Date", V.Local.sLnDate, "ShipID", V.Local.sShipID, "PO", V.Local.sPO)</string>
+        <string>		</string>
+        <string>	Function.Intrinsic.Control.Else</string>
+        <string>		'Keep track of lines that had invalid number of parameters.</string>
+        <string>		Function.Intrinsic.String.Build("{0}{1},", Variable.Local.sBadLines, Variable.Local.sErr, Variable.Local.sBadLines) </string>
+        <string>	Function.Intrinsic.Control.EndIf</string>
+        <string>Function.Intrinsic.Control.Next(Variable.Local.iCount)</string>
+        <string />
+        <string>F.Data.DataTable.SetValueFormat("Lines", -1, "BlanketOrder", "BlanketOrder", "0000000")</string>
+        <string>F.Data.DataTable.SetValueFormat("Lines", -1, "OrderLine", "OrderLine", "000")</string>
+        <string>F.Data.DataTable.SetValueFormat("Lines", -1, "PO", "PO", "0000000") </string>
+        <string>F.Data.DataTable.SetValueFormat("Lines", -1, "ShipID", "ShipID", "000000")</string>
+        <string>F.Data.Dictionary.CreateFromDataTable("POs", "Lines", "ShipID", "PO")</string>
+        <string>F.Data.Dictionary.SetDefaultReturn("POs", "0000000")</string>
+        <string />
+        <string>'Create dictionary based on Ship ID</string>
+        <string>Function.Data.Dictionary.CreateFromDataTable("Filter", "Lines", "ShipID", "ShipID")</string>
+        <string>Function.Data.Dictionary.ReturnAllPairs("Filter", Variable.Local.sKeys)</string>
+        <string />
+        <string>Function.Intrinsic.String.Split(Variable.Local.sKeys, "!*!", Variable.Local.sKeys)</string>
+        <string>Function.Intrinsic.String.Split(Variable.Local.sKeys(0), "*!*", Variable.Local.sKeys)</string>
+        <string />
+        <string />
+        <string>Function.Intrinsic.Control.For(Variable.Local.iCount, 0, Variable.Local.sKeys.UBound, 1)</string>
+        <string>	Function.Intrinsic.String.Build("ShipID = '{0}'", Variable.Local.sKeys(Variable.Local.iCount), Variable.Local.sFilter)</string>
+        <string>	Function.Data.DataView.Create("Lines", Variable.Local.sKeys(Variable.Local.iCount), 22, Variable.Local.sFilter, "BlanketOrder ASC, OrderLine ASC")</string>
+        <string>	'loop through DataView to create csv file and use call wrapper accordingly.</string>
+        <string>	Variable.Local.sShipID.Set(Variable.Local.sKeys(Variable.Local.iCount))</string>
+        <string>	Variable.Local.sLine.Set("")</string>
+        <string>	V.Local.sShipLn.Set("001")</string>
+        <string>	Function.Intrinsic.Control.For(Variable.Local.iView, 0, Variable.DataView.Lines![Variable.Local.sShipID].RowCount--, 1)</string>
+        <string>		Variable.Local.sBlOrd.Set(Variable.DataView.Lines![Variable.Local.sShipID](Variable.Local.iView).BlanketOrder!FieldVal)</string>
+        <string>		Variable.Local.sOrdLn.Set(Variable.DataView.Lines![Variable.Local.sShipID](Variable.Local.iView).OrderLine!FieldVal)</string>
+        <string>		Variable.Local.sLnQty.Set(Variable.DataView.Lines![Variable.Local.sShipID](Variable.Local.iView).Quantity!FieldValFloat)</string>
+        <string>		Variable.Local.sLnDate.Set(Variable.DataView.Lines![Variable.Local.sShipID](Variable.Local.iView).Date!FieldVal)</string>
+        <string>		Function.Intrinsic.Control.If(Variable.Local.sLine, =, "")</string>
+        <string>			Function.Intrinsic.String.Build("{0},{1},{2}", Variable.Local.sOrdLn, Variable.Local.sLnQty, Variable.Local.sLnDate, Variable.Local.sLine)</string>
+        <string>		Function.Intrinsic.Control.Else</string>
+        <string>			Function.Intrinsic.String.Build("{4}{3}{0},{1},{2}", Variable.Local.sOrdLn, Variable.Local.sLnQty, Variable.Local.sLnDate, Variable.Ambient.NewLine, Variable.Local.sLine, V.Local.sLine)</string>
+        <string>		Function.Intrinsic.Control.EndIf</string>
+        <string>					</string>
+        <string>	Function.Intrinsic.Control.Next(Variable.Local.iView)	</string>
+        <string>	Function.Intrinsic.String.Build("{0}\LineTemp.csv", V.Caller.FilesDir, Variable.Local.sTemp)	</string>
+        <string>	Function.Intrinsic.File.String2File(Variable.Local.sTemp, Variable.Local.sLine)</string>
+        <string>	F.Intrinsic.Control.If(V.Local.sShipID.Trim, =, "F")</string>
+        <string>		V.Local.sShipID.Set("")</string>
+        <string>	F.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>	Function.Intrinsic.String.ConcatCallWrapperArgs(Variable.Local.sBlOrd, "*!*ZDR*!*", "B", Variable.Local.sTemp, Variable.Local.sShipID, Variable.Local.sDate, Variable.Local.sParams)</string>
+        <string>	Function.Global.General.CallWrapperSync(7041, Variable.Local.sParams)</string>
+        <string>	'Check Callwrapperreturn to see if it was processed.</string>
+        <string>	Function.Intrinsic.String.Split(Variable.Ambient.CallWrapperReturn, "*!*RETURN::", Variable.Local.sRet)</string>
+        <string>	</string>
+        <string>	Function.Intrinsic.Control.If(Variable.Local.sRet.UBound, =&gt;, 1)</string>
+        <string>		Function.Intrinsic.String.Split(Variable.Local.sRet(1),"*!*", Variable.Local.sRet)</string>
+        <string>		Function.Intrinsic.Control.If(Variable.Local.sRet(0).Trim, =, "0")</string>
+        <string>			'The process was successful</string>
+        <string>			Function.Intrinsic.String.Split(Variable.Ambient.CallWrapperReturn, "*!*RET-ORDER::", Variable.Local.sSO)</string>
+        <string>			F.Intrinsic.String.Split(V.Local.sSO(1), "*!*", V.Local.sSO)</string>
+        <string>			</string>
+        <string>			'Making a list of all Sales Orders created with the releases for notification purposes</string>
+        <string>			F.Intrinsic.String.Build("{0}{1} ", V.Local.sSOs, V.Local.sSO(0), V.Local.sSOs)</string>
+        <string>			</string>
+        <string>			F.Intrinsic.Control.If(V.Local.sShipID.Trim, =, "")</string>
+        <string>				V.Local.sShipID.Set("F")</string>
+        <string>			F.Intrinsic.Control.EndIf</string>
+        <string>			</string>
+        <string>			'Collect order information from table after the order is created. This will be used to create the shipment lines</string>
+        <string>			F.Intrinsic.String.Build("Select ORDER_NO as OrderNumber, RECORD_NO, QTY_ORDERED as SchedQty, DATE_ITEM_PROM  as DueDate From  ORDER_LINES where ORDER_NO = '{0}' and RECORD_NO &gt; '0' ", V.Local.sSO(0), V.Local.sSql)</string>
+        <string>			F.Data.DataTable.CreateFromSQL("TEMP", "con", V.Local.sSql, True)</string>
+        <string>			F.Data.DataTable.Merge("TEMP", "ShipSched", True, 2)</string>
+        <string>			F.Data.DataTable.Close("TEMP")</string>
+        <string>			</string>
+        <string>			'Here we replace the correct Customer PO. The system automatically uses the Blanket order, so we need it changed.</string>
+        <string>			V.Local.sPO.Set(V.Dictionary.POs![V.Local.sShipID])</string>
+        <string>			F.Intrinsic.String.Build("UPDATE ORDER_HEADER SET CUSTOMER_PO = '{0}' where ORDER_NO = '{1}' and  RECORD_TYPE = 'A' ", V.Local.sPO, V.Local.sSO(0), V.Local.sSql)</string>
+        <string>			F.ODBC.Connection!con.Execute(V.Local.sSql)</string>
+        <string>			Function.Intrinsic.String.Build("Process for Ship ID '{0}' was a success. Sales Order {1} created.{2}", Variable.Local.sShipID, V.Local.sSO(0), Variable.Ambient.NewLine, Variable.Local.sErr)</string>
+        <string>			</string>
+        <string>		Function.Intrinsic.Control.Else</string>
+        <string>			'The process was not a success</string>
+        <string>			Function.Intrinsic.String.Build("Process for Ship ID '{0}' Failed. Order lines not released. {1}", Variable.Local.sShipID, Variable.Ambient.NewLine, Variable.Local.sErr)</string>
+        <string>		Function.Intrinsic.Control.EndIf		</string>
+        <string>	Function.Intrinsic.Control.Else</string>
+        <string>		'The process was not a success</string>
+        <string>		Function.Intrinsic.String.Build("Process for Ship ID '{0}' Failed. Order lines not released. {1}", Variable.Local.sShipID, Variable.Ambient.NewLine, Variable.Local.sErr)		</string>
+        <string>	Function.Intrinsic.Control.EndIf</string>
+        <string>	Function.Intrinsic.Control.CallSub(writefile, "sLine", Variable.Local.sErr)</string>
+        <string>Function.Intrinsic.Control.Next(Variable.Local.iCount)</string>
+        <string />
+        <string>F.Data.DataTable.SetValueFormat("ShipSched", -1, "SchedQty", "SchedQty", "000000000000.0000")</string>
+        <string>F.Data.DataTable.SetValueFormat("ShipSched", -1, "OpenQty", "OpenQty", "000000000000.0000")</string>
+        <string />
+        <string>'Create a file for the 1Shot program to use for creating shipment lines</string>
+        <string>F.Intrinsic.Control.CallSub(ishofile)</string>
+        <string />
+        <string>'mode 50 is to call 1shot programs. Uploescd pulls file from FILES directory and processes lines for shipment.</string>
+        <string>F.Global.General.CallWrapperAsync(50, "UPLOESCD/U")</string>
+        <string />
+        <string>F.Data.Dictionary.Close("Filter")</string>
+        <string>F.Data.Dictionary.Close("POs")</string>
+        <string>F.Data.DataTable.Close("Lines")</string>
+        <string>F.Data.DataTable.Close("ShipSched")</string>
+        <string />
+        <string>V.Local.sShipID.Set(V.Screen.F_FileSelect!txtDirectory.Text)</string>
+        <string>Function.Intrinsic.String.Build("{1}Blanket release orders in file {1}{0} {1}Completed. {1}", Variable.Local.sShipID, Variable.Ambient.NewLine, Variable.Local.sErr)		</string>
+        <string>Function.Intrinsic.Control.CallSub(writefile, "sLine", Variable.Local.sErr)</string>
+        <string />
+        <string>F.Intrinsic.String.Build("Blanket order releases have been processed. The following Sales Orders were created:{0}{1}{0}Error log has been created.", V.Ambient.NewLine, V.Local.sSOs, v.Local.sSql)</string>
+        <string />
+        <string>Function.Intrinsic.UI.CloseWaitDialog</string>
+        <string>Function.Intrinsic.UI.Msgbox(V.Local.sSql, "Process Complete")</string>
+        <string />
+        <string>Gui.F_FileSelect.txtDirectory.Text("")</string>
+        <string>Gui.F_FileSelect..Show</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdUpload_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(f_fileselect_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdUpload_Click.End</string>
+        <string />
+        <string>Program.Sub.F_FileSelect_UnLoad.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("F_FileSelect_UnLoad_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>F.ODBC.Connection!con.Close</string>
+        <string>Function.Intrinsic.Control.End</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("F_FileSelect_UnLoad_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.F_FileSelect_UnLoad.End</string>
+        <string />
+        <string>Program.Sub.WriteFile.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("WriteFile_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>'Add line to error log</string>
+        <string>Function.Intrinsic.File.Append2FileNewLine(Variable.Global.uFile, Variable.Args.sLine)</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("WriteFile_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(f_fileselect_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.WriteFile.End</string>
+        <string />
+        <string>Program.Sub.CreateDatatable.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("CreateDatatable_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string>Variable.Local.sErr.Declare(String)</string>
+        <string />
+        <string>'Datatable Lines is used to pull all data from the excel file the user selected.</string>
+        <string>Function.Data.DataTable.Create("Lines", True)</string>
+        <string>Function.Data.DataTable.AddColumn("Lines", "BlanketOrder", "String")</string>
+        <string>Function.Data.DataTable.AddColumn("Lines", "OrderLine", "String")</string>
+        <string>Function.Data.DataTable.AddColumn("Lines", "Quantity", "String")</string>
+        <string>Function.Data.DataTable.AddColumn("Lines", "Date", "String")</string>
+        <string>Function.Data.DataTable.AddColumn("Lines", "ShipID", "String", "F")</string>
+        <string>Function.Data.DataTable.AddColumn("Lines", "PO", "String")</string>
+        <string />
+        <string>'DataTable ShipSched will be used to store all sales order lines created from the blanket releases to be used for creating shipment lines</string>
+        <string>F.Data.DataTable.Create("ShipSched", True)</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "ShipID", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "OrderNumber", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "RECORD_NO", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "OrderLine", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "DueDate", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "SchedQty", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "OpenQty", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "UserInfo", "String")</string>
+        <string>F.Data.DataTable.AddColumn("ShipSched", "ClosedFlag", "String", "N")</string>
+        <string />
+        <string>Function.Intrinsic.String.Build("{0}Data Tables created. {0}", Variable.Ambient.NewLine, Variable.Local.sErr)</string>
+        <string>Function.Intrinsic.Control.CallSub(writefile, "sLine", Variable.Local.sErr)</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("CreateDatatable_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(f_fileselect_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.CreateDatatable.End</string>
+        <string />
+        <string>Program.Sub.checkProgram.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("checkProgram_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string>V.Local.bFlag.Declare(Boolean)</string>
+        <string>V.Local.sErr.Declare(String)</string>
+        <string />
+        <string>V.Local.bFlag.Set(False)</string>
+        <string />
+        <string>F.Intrinsic.Control.CallSub(createfile)</string>
+        <string />
+        <string>'This subroutine will check for the presence of Excel or Open Office Spredsheet creator thing</string>
+        <string>F.Automation.MSExcel.CheckPresence(V.Local.bFlag)</string>
+        <string>F.Intrinsic.Control.If(v.Local.bFlag, =, True)</string>
+        <string>	V.Global.uFlag.Set("EXCEL")</string>
+        <string>	F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>F.Automation.OOGeneral.CheckPresence(V.Local.bFlag)</string>
+        <string>F.Intrinsic.Control.If(v.Local.bFlag, =, True)</string>
+        <string>	V.Global.uFlag.Set("OOCALC")</string>
+        <string>	F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>F.Intrinsic.String.Build("{0}Xml program not found in system. Ending program {0}", V.Ambient.NewLine, V.Local.sErr)</string>
+        <string>F.Intrinsic.Control.CallSub(writefile, "sLine", V.Local.sErr)</string>
+        <string>F.Intrinsic.Control.End</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("checkProgram_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(f_fileselect_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.checkProgram.End</string>
+        <string />
+        <string>Program.Sub.CreateFile.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("CreateFile_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string>V.Local.sDate.Declare(String)</string>
+        <string>V.Local.sName.Declare(String)</string>
+        <string>V.Local.sLog.Declare(String)</string>
+        <string>V.Local.sDir.Declare(String)</string>
+        <string>V.Local.bDir.Declare(String)</string>
+        <string />
+        <string>'Function below automatically formats to CCYYMMDD</string>
+        <string>Function.Intrinsic.String.DateString(Variable.Ambient.Date, Variable.Local.sDate)</string>
+        <string />
+        <string>'This is the name of the Error Log file. The format is SOUpload-MMDDCCYY-TTTTTT.txt</string>
+        <string>Function.Intrinsic.String.Replace(Variable.Ambient.Date, "/", "", Variable.Local.sName)</string>
+        <string>Function.Intrinsic.String.Split(Variable.Local.sName, " ", Variable.Local.sName)</string>
+        <string>Function.Intrinsic.String.Split(Variable.Ambient.Time, " ", Variable.Local.sLog)</string>
+        <string>Function.Intrinsic.String.Replace(Variable.Local.sLog(0), ":", "", Variable.Local.sLog)</string>
+        <string>Function.Intrinsic.String.Build("SOUpload-{0}-{1}", Variable.Local.sName(0), Variable.Local.sLog, Variable.Local.sLog)</string>
+        <string />
+        <string>Function.Intrinsic.String.Build("{0}\Blanket Errorlogs", Variable.Caller.FilesDir, Variable.Local.sDir)</string>
+        <string />
+        <string>'Create the directory for the Error Logs if it is not there</string>
+        <string>Function.Intrinsic.File.DirExists(Variable.Local.sDir, Variable.Local.bDir)</string>
+        <string>Function.Intrinsic.Control.If(Variable.Local.bDir, =, False)</string>
+        <string>	Function.Intrinsic.File.CreateDir(Variable.Local.sDir)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>Function.Intrinsic.String.Build("{0}\{1}.txt", Variable.Local.sDir, Variable.Local.sLog, Variable.Global.uFile)</string>
+        <string>Function.Intrinsic.File.String2File(Variable.Global.uFile, "Begin Error Log")</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("CreateFile_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(f_fileselect_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.CreateFile.End</string>
+        <string />
+        <string>Program.Sub.IshoFile.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("IshoFile_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string>V.Local.iCount.Declare(Long)</string>
+        <string>V.Local.sFile.Declare(String)</string>
+        <string>V.Local.sDirectory.Declare(String)</string>
+        <string>V.Local.sUser.Declare(String)</string>
+        <string>V.Local.sQty.Declare(String)</string>
+        <string>V.Local.sOrdLn.Declare(String)</string>
+        <string />
+        <string>F.Intrinsic.String.RPad("", " ", 30, V.Local.sUser)</string>
+        <string />
+        <string>'This subroutine will make a .txt file to be used to schedule shipments for the sales orders created from the blanket release orders.</string>
+        <string>F.Intrinsic.String.Build("{0}\OESCD.TXT",V.Caller.FilesDir, V.Local.sDirectory) </string>
+        <string />
+        <string>V.Local.sFile.Set("")</string>
+        <string />
+        <string>'This is a character length specific file. Parameter specs can be found in the GAB Online help under Additional References &gt; Data Conversion Upload Tables &gt; Sales Order Ship Schedule Master.</string>
+        <string>F.Intrinsic.Control.For(V.Local.iCount, 0, V.DataTable.ShipSched.RowCount--, 1)</string>
+        <string>	F.Intrinsic.Control.If(V.DataTable.ShipSched(V.Local.iCount).OrderNumber!FieldValTrim, &lt;&gt;, "NA")</string>
+        <string>		F.Intrinsic.String.Left(V.DataTable.ShipSched(V.Local.iCount).RECORD_NO!FieldValTrim, 3, V.Local.sOrdLn)</string>
+        <string>		F.Intrinsic.String.Replace(V.DataTable.ShipSched(V.Local.iCount).SchedQty!FieldValTrim, ".", "", V.Local.sQty)</string>
+        <string>		F.Intrinsic.String.Build("{0}{1}{2}", V.Local.sFile, V.DataTable.ShipSched(V.Local.iCount).OrderNumber!FieldValTrim, V.Local.sOrdLn, V.Local.sFile)</string>
+        <string>		F.Intrinsic.String.Build("{0}{1}{2}{2}", V.Local.sFile, V.DataTable.ShipSched(V.Local.iCount).DueDate!FieldValTrim, V.Local.sQty, V.Local.sFile)</string>
+        <string>		F.Intrinsic.String.Build("{0}{1}{2}{3}", V.Local.sFile, V.Local.sUser, "N", V.Ambient.NewLine, V.Local.sFile)</string>
+        <string>	F.Intrinsic.Control.EndIf</string>
+        <string>F.Intrinsic.Control.Next(V.Local.iCount)</string>
+        <string />
+        <string>F.Intrinsic.File.String2File(V.Local.sDirectory, V.Local.sFile)</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string />
+        <string>F.Intrinsic.Control.Label("IshoFile_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4398_BlankRelAndShipSched.g2c",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(f_fileselect_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.IshoFile.End</string>
+        <string />
+        <string>Program.Sub.Comments.Start</string>
+        <string>${$0$}$GCG_4209_BlanketUpload.g2c$}$SISCO$}$10/18/2016 2:01:58 PM$}$False</string>
+        <string>${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$This project was generated by FEQ on 10/2016. This script should run from a custom menu item under Order Entry &gt; Transaction &gt; Blanket Order Release Upload.</string>
+        <string>This script will allow the user to upload multiple blanket sales order releases through a .csv file</string>
+        <string />
+        <string>The format of the .csv file is expected to be:</string>
+        <string />
+        <string>Blanket Order No.</string>
+        <string>Blanket Order line number - three digits</string>
+        <string>Quantity - up to nine digits before the decimal and six after</string>
+        <string>Line Due Date - in CCYYMMDD format</string>
+        <string>Ship to ID</string>
+        <string />
+        <string />
+        <string>Program.Sub.Comments.End</string>
+      </Lines>
+    </TextStrings>
+  </TextSource>
+  <Scrolling>
+    <WindowOriginY>388</WindowOriginY>
+  </Scrolling>
+  <Outlining>
+    <AllowOutlining>true</AllowOutlining>
+    <ImageSize>8</ImageSize>
+    <Ranges>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>0</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>22</Y>
+        </EndPoint>
+        <Text>Program.Sub.ScreenSU</Text>
+        <DisplayText>Program.Sub.ScreenSU</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>24</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>28</Y>
+        </EndPoint>
+        <Text>Program.Sub.Preflight</Text>
+        <DisplayText>Program.Sub.Preflight</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>30</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>42</Y>
+        </EndPoint>
+        <Text>Program.Sub.Main</Text>
+        <DisplayText>Program.Sub.Main</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>44</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>75</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdBrowser_Click</Text>
+        <DisplayText>Program.Sub.cmdBrowser_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>77</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>269</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdUpload_Click</Text>
+        <DisplayText>Program.Sub.cmdUpload_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>271</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>285</Y>
+        </EndPoint>
+        <Text>Program.Sub.F_FileSelect_UnLoad</Text>
+        <DisplayText>Program.Sub.F_FileSelect_UnLoad</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>287</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>303</Y>
+        </EndPoint>
+        <Text>Program.Sub.WriteFile</Text>
+        <DisplayText>Program.Sub.WriteFile</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>305</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>343</Y>
+        </EndPoint>
+        <Text>Program.Sub.CreateDatatable</Text>
+        <DisplayText>Program.Sub.CreateDatatable</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>345</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>381</Y>
+        </EndPoint>
+        <Text>Program.Sub.checkProgram</Text>
+        <DisplayText>Program.Sub.checkProgram</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>383</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>422</Y>
+        </EndPoint>
+        <Text>Program.Sub.CreateFile</Text>
+        <DisplayText>Program.Sub.CreateFile</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>424</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>464</Y>
+        </EndPoint>
+        <Text>Program.Sub.IshoFile</Text>
+        <DisplayText>Program.Sub.IshoFile</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>466</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>480</Y>
+        </EndPoint>
+        <Text>Program.Sub.Comments</Text>
+        <DisplayText>Program.Sub.Comments</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+    </Ranges>
+  </Outlining>
+  <HyperText />
+  <Spelling />
+  <Braces />
+</SyntaxEdit>
