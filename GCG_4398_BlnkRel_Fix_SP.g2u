@@ -1,0 +1,45 @@
+﻿Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.Try
+'TJS, June 2021
+'Quote 12694
+'Copy salesperson from blanket order to newly uploaded release orders.
+Function.Intrinsic.UI.UsePixels ' Allows you to use Pixels instead of Twips throughout
+V.Local.sSQL.Declare
+V.Local.sSO.Declare
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,"48762")
+	F.Intrinsic.String.LPad(V.Passed.000104,"0",7,V.Local.sSO)
+	F.ODBC.Connection!conts.OpenCompanyConnection
+	F.Intrinsic.String.Build("Select SALESPERSON from V_ORDER_HEADER where ORDER_NO = '{0}'",V.Local.sSO,V.Local.sSQL)
+	F.ODBC.Connection!conts.ExecuteAndReturn(V.Local.sSQL,V.Local.sSQL)
+	
+	F.Intrinsic.String.Build("Update ORDER_HEADER set SALESPERSON = '{0}' where ORDER_NO = '0{1}' and RECORD_TYPE in ('A','C')",V.Local.sSQL.Trim,V.Passed.000106.Trim,V.Local.sSQL)
+	F.ODBC.Connection!conts.Execute(V.Local.sSQL)
+	
+	F.ODBC.Connection!conts.Close
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.Error.Start
+V.Local.sError.Declare
+V.Local.iRet.Declare
+V.Local.sSep.Declare
+
+F.Intrinsic.String.Build("-------------------------------------------------------------------------------------",,V.Local.sSep)
+F.Intrinsic.String.Build("({5}-{6}){0}{7}{0}Project: {4}{0}{7}{0}Sub: {1}{0}Error: {2}, {3}", V.Ambient.NewLine, V.Args.SubRoutine, V.Args.eNumber, V.Args.eDescription,V.Caller.ScriptFile,V.Ambient.Date, V.Ambient.Time,V.Local.sSep,V.Local.sError)
+F.Intrinsic.UI.Msgbox(V.Local.sError,"Error",V.Local.iRet)
+Program.Sub.Error.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$1
+${$6$}$tsmith$}$20211018090048305$}$xqPbj9atw05FglvzeFsZ9cqXP+qvG6tXRIVpxGKlMJymjUIiYNbLjvljTLtOemBqHmqji0SeiT0=
+Program.Sub.Comments.End
