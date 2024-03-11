@@ -1,0 +1,39 @@
+﻿Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.Try
+'TJS, Oct 2021
+'Customer: Harding Group
+'Related to work done for quote 12694
+'Needed a method to prevent overwriting the salesperson on the order header when switching ShipTo.
+'Hooks: 11570, ShipTo Hook and 33310, Populate ShipTo
+
+Function.Intrinsic.UI.UsePixels ' Allows you to use Pixels instead of Twips throughout
+
+F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+	F.Intrinsic.Control.Case(11570) ' Grabbing the current salesperson from the order header
+		V.Passed.GLOBAL.Set(V.Passed.000030.Trim)
+	F.Intrinsic.Control.Case(33310)
+		V.Passed.000017.Set(V.Passed.GLOBAL.Trim) 'Setting the salesperson on the ShipTo ID screen
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.Error.Start
+V.Local.sError.Declare
+V.Local.iRet.Declare
+V.Local.sSep.Declare
+
+F.Intrinsic.String.Build("-------------------------------------------------------------------------------------",,V.Local.sSep)
+F.Intrinsic.String.Build("({5}-{6}){0}{7}{0}Project: {4}{0}{7}{0}Sub: {1}{0}Error: {2}, {3}", V.Ambient.NewLine, V.Args.SubRoutine, V.Args.eNumber, V.Args.eDescription,V.Caller.ScriptFile,V.Ambient.Date, V.Ambient.Time,V.Local.sSep,V.Local.sError)
+F.Intrinsic.UI.Msgbox(V.Local.sError,"Error",V.Local.iRet)
+Program.Sub.Error.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$1
+${$6$}$tsmith$}$20211015110308576$}$xqPbj9atw05FglvzeFsZ9cqXP+qvG6tXRIVpxGKlMJz/Bx7cLch2jBBTEP87uodqSt0eEu0zOjw=
+Program.Sub.Comments.End
